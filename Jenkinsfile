@@ -24,7 +24,7 @@ pipeline {
       steps {
         withDockerRegistry([credentialsId: 'docker-hub', url: "https://index.docker.io/v1/"]) {
           sh 'sudo docker login https://index.docker.io/v1/ -u=swapnaponnam1 -p=Password2'
-          sh 'sudo /usr/bin/docker push swapnaponnam1/account-service:latest'
+          sh 'sudo /usr/bin/docker push swapnaponnam1/jenkins-example:latest'
         }
       }
     }
