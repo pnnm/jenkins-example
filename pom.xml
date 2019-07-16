@@ -69,6 +69,8 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.10</version>
                 <configuration>
+                           <serverId>docker.io</serverId>
+                    <registryUrl>swapnaponnam1</registryUrl>
                     <imageName>swapnaponnam1/${project.artifactId}</imageName>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar", "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,suspend=n"]</entryPoint>
