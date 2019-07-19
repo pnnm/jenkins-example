@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+    registry = "swapnaponnam1/docker-test"
+    registryCredential = "docker-hub"
+  }
     agent any
 
     stages {
